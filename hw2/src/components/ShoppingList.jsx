@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ShoppingList({ items = [] }) {
 	if (items.length === 0) {
 		return <h3>Список покупок пуст</h3>
