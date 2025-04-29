@@ -1,0 +1,28 @@
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+height: 30px;
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  width: 100%;
+  max-width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(209, 236, 248);
+  font-size: 15px;
+}
