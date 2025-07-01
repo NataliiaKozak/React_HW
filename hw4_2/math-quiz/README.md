@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+HW 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Task 2: Creating a "Math Quiz" Application in React
 
-## Available Scripts
+This application will present users with addition math problems, evaluate their answers, and award/deduct points for correct/incorrect responses respectively.
 
-In the project directory, you can run:
+Project Initialization:
+Use create-react-app to set up the initial project template.
+This provides a ready-to-use development environment for your React application.
 
-### `npm start`
+Creating the MathQuiz Component:
+This component will handle the core game logic, including:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Generating random numbers for math problems
+- Displaying the current score
+- Integrating with the Answer component to receive and validate user responses
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Creating the Answer Component:
 
-### `npm test`
+- Provides an input form for user answers.
+- Handles user input and submits it for validation.
+- Connected to MathQuiz via the updatePoints function, which triggers on form submission.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Data Preparation
 
-### `npm run build`
+- In MathQuiz, two randomly generated variables (a and b) create addition problems.
+- These values, along with the updatePoints scoring function, are passed to Answer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+State Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- In MathQuiz: Use useState to track the user's current score.
+- In Answer: Use useState to manage user input.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dynamic Rendering
+MathQuiz displays: The current math problem (a + b). The user's score
 
-### `npm run eject`
+Answer provides:
+An input interface. Submission handling (sends answers to MathQuiz for validation and score updates)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Styling
+Apply CSS to enhance the visual presentation of components.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Functionality Testing
+Launch the app and verify: Correct problem generation. Proper answer processing. Accurate score updates based on answer correctness

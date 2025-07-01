@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+HW 4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Task 1: Creating a "City Cards" Application in React
 
-## Available Scripts
+Project Initialization
 
-In the project directory, you can run:
+- Use create-react-app to set up the initial project template.
+- Perform preliminary project configuration.
 
-### `npm start`
+Creating the CitySelector Component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Develop a city selection component.
+- This component should include a form with a dropdown menu that allows selecting from a predefined list of cities.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Creating the CityCard Component
+Focus on building a city card that displays:
 
-### `npm test`
+- An image
+- A description
+- Interesting facts about the selected city
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Preparing Data
+In the CitySelector component, define a JavaScript array of objects containing information about each city, including:
 
-### `npm run build`
+- Name
+- Description
+- Image
+- Facts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+State Management
+In the App component, use the useState hook to pass data about the selected city to the displayed CityCard.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Dynamic Rendering
+Implement logic that displays the corresponding CityCard when a city is selected in CitySelector.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Styling
+Apply styles to your components.
 
-### `npm run eject`
+Functionality Testing
+Launch the application and verify that:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All interface elements work correctly.
+Data updates properly when selecting a city.
