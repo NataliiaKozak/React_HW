@@ -8,9 +8,9 @@ function App() {
   return (
     <LanguageProvider>
       <div className={styles.container}>
-        <LanguageSwitcher />
         <TextDisplay />
-      </div>
+        <LanguageSwitcher />
+              </div>
     </LanguageProvider>
   );
 }

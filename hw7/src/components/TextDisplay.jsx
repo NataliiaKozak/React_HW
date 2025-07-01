@@ -6,8 +6,8 @@ const TextDisplay = () => {
   const { language } = useContext(LanguageContext);
 
   const text = {
-    en: 'Welcome!',
-    ru: 'Добро пожаловать!',
+    en: 'English language was chosen',
+    ru: 'Выбран русский язык',
   };
 
   return <p className={styles.text}>{text[language]}</p>;

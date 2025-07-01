@@ -1,7 +1,7 @@
 .button {
-  background: rgb(63, 184, 232);
-  color: rgb(249, 247, 247);
-  border: 2px solid rgb(243, 243, 247);
+  background: rgb(173, 110, 190);
+  color: rgb(11, 1, 18);
+  border: 2px solid rgb(122, 17, 221);
   border-radius: 25px;
   padding: 12px 24px;
   font-size: 16px;
@@ -14,5 +14,5 @@
 }
 
 .button:hover {
-  background: #245e6d;
+  background: #704496;
 }
