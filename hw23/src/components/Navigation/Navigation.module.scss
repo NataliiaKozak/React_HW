@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #fff;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 32px;
+}
+
+a {
+  color: #3182ce;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover,
+  &:focus {
+    background: #e6f0fa;
+    color: #2563eb;
+  }
+}
